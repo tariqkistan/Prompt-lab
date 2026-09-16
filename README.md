@@ -1,11 +1,18 @@
-# prompt-lab
+# Prompt-lab
 
-A Python CLI for scoring text against custom rubrics using LLMs. Supports zero-shot, few-shot, and chain-of-thought prompting modes.
+A lightweight LLM evaluation framework for scoring text — call transcripts, support tickets, customer messages — against custom-defined rubrics. Built to explore how prompting strategy (zero-shot vs. few-shot vs. chain-of-thought) affects scoring consistency and reliability.
+
+## Why I built this
+
+Built as a technical exploration ahead of Nutun's AI Engineer role — modeling the kind of evaluation pipeline a QA/compliance scoring system would need: rubric-based scoring, validated LLM output, and an audit trail of every decision.
 
 ## What it does
 
-Takes any text (call transcript, customer email, support message) and scores it against a rubric you define — using GPT-4o with your choice of prompting strategy.
-
+- Scores any text against a JSON-defined rubric (binary or scale)
+- Supports three prompting modes: zero-shot, few-shot, and chain-of-thought
+- Validates LLM output with Pydantic — catches malformed JSON, out-of-range scores, and missing fields before they reach a log file
+- Logs every scoring run to JSONL for downstream analysis
+- Ships with tests (mocked LLM calls) and a GitHub Actions CI pipeline
 ## Quick start
 
 ```bash
