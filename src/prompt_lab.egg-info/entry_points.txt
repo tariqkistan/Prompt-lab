@@ -1,0 +1,2 @@
+[console_scripts]
+promptlab = promptlab.cli:app

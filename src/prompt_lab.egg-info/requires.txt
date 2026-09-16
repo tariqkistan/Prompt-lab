@@ -1,0 +1,13 @@
+openai>=1.40
+pydantic>=2.0
+python-dotenv
+rich
+typer
+
+[dev]
+pytest
+pytest-mock
+pytest-asyncio
+ruff
+mypy
+pytest-cov

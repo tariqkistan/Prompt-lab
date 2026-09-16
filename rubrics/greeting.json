@@ -1,0 +1,19 @@
+{
+    "name": "greeting_compliance",
+    "description": "Did the agent greet the customer properly?",
+    "criteria": "Score 1 if agent stated their name AND company. Score 0 if either missing.",
+    "scoring_type": "binary",
+    "examples": [
+      {
+        "text": "Hi I'm Zara from XYZ Holdingz calling about your account",
+        "score": 1.0,
+        "reason": "Name and company both stated"
+      },
+      {
+        "text": "Hello, can I speak to the account holder?", 
+        "score": 0.0,
+        "reason": "No name, no company"
+      }
+    ]
+    
+  }

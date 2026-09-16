@@ -1,0 +1,4 @@
+# samples/good_call.txt Hi I'm Zara from Nutun Financial Services. I'm calling about your
+account ending in 4521. Before I continue, could I please verify your identity by asking for
+your date of birth? # samples/bad_call.txt Hello? Yes hi. So I'm calling about some money you
+owe. Are you the right person? We need to sort this out.
