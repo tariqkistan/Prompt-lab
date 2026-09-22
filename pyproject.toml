@@ -34,5 +34,8 @@ where = ["src"]
 [tool.ruff]
 line-length = 88
 
+[tool.ruff.lint]
+ignore = ["B008"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
