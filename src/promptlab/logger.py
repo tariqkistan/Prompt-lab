@@ -11,7 +11,7 @@ def log_result(
     input_text: str,
     result: ScoreResult,
     tokens_used: int,
-    model: str = None,
+    model: str | None = None,
 ) -> None:
     """Append the scoring result to logs/results.jsonl"""
     log_dir = Path(os.environ.get('LOG_DIR', 'logs'))
