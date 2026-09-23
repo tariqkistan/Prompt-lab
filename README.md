@@ -1,6 +1,7 @@
 # Prompt-lab
 
 [![CI Status](https://github.com/tariqkistan/Prompt-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/tariqkistan/Prompt-lab/actions/workflows/ci.yml)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/)
 
 A lightweight LLM evaluation framework for scoring text — call transcripts, support tickets, customer messages — against custom-defined rubrics. Built to explore how prompting strategy (zero-shot vs. few-shot vs. chain-of-thought) affects scoring consistency and reliability.
 
